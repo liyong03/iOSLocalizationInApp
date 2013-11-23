@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>93AB133B-84AD-4451-84FE-4FBFCB697514</string>
+	<key>IDESourceControlProjectName</key>
+	<string>changeLanguage</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>16803BA8-1CD0-4134-881D-F12072452743</key>
+		<string>ssh://github.com/liyong03/iosLocalizationInApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>changeLanguage.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>16803BA8-1CD0-4134-881D-F12072452743</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/liyong03/iosLocalizationInApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>16803BA8-1CD0-4134-881D-F12072452743</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>16803BA8-1CD0-4134-881D-F12072452743</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iosLocalizationInApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
