@@ -21,4 +21,7 @@
 
 @property(nonatomic, weak) id<YLLanguageSelectViewControllerDelegate> delegate;
 
++ (void)showLanguageSelectViewControllerWithDelegate:(UIViewController<YLLanguageSelectViewControllerDelegate> *)delegate;
++ (void)dismissLanguageSelectViewController;
+
 @end

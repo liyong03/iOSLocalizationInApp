@@ -11,6 +11,8 @@
 
 #define CELL_IDENTITY @"Cell"
 
+static __weak UIViewController<YLLanguageSelectViewControllerDelegate>* _presentingViewController;
+
 @interface YLLanguageSelectViewController ()
 
 @end
@@ -19,6 +21,22 @@
 {
     NSMutableArray* _languages;
     NSUInteger _seledIndex;
+}
+
+
++ (void)showLanguageSelectViewControllerWithDelegate:(UIViewController<YLLanguageSelectViewControllerDelegate>*)_delegate
+{
+    YLLanguageSelectViewController* controller = [[YLLanguageSelectViewController alloc] initWithNibName:nil bundle:nil];
+    controller.delegate = _delegate;
+    UINavigationController* navi = [[UINavigationController alloc] initWithRootViewController:controller];
+    _presentingViewController = _delegate;
+    [_presentingViewController presentViewController:navi animated:YES completion:nil];
+}
+
++ (void)dismissLanguageSelectViewController
+{
+    [_presentingViewController dismissViewControllerAnimated:YES completion:nil];
+    _presentingViewController = nil;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -84,7 +102,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    int oldIdx = _seledIndex;
+    NSUInteger oldIdx = _seledIndex;
     _seledIndex = indexPath.row;
     [[YLLanguageManager sharedManager] setLanguage:[_languages objectAtIndex:_seledIndex]];
     [tableView beginUpdates];
@@ -145,6 +163,7 @@
 
 - (void)cancelSelect:(id)sender
 {
+    [YLLanguageSelectViewController dismissLanguageSelectViewController];
     if([_delegate respondsToSelector:@selector(cancelSelectLangugae:)])
     {
         [_delegate cancelSelectLangugae:self];
@@ -154,6 +173,7 @@
 
 - (void)doneSelect:(id)sender
 {
+    [YLLanguageSelectViewController dismissLanguageSelectViewController];
     if([_delegate respondsToSelector:@selector(finishedSelectLanguage:)])
     {
         [_delegate finishedSelectLanguage:self];

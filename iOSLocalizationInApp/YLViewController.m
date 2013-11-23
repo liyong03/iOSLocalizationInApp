@@ -136,19 +136,20 @@
 }
 
 - (IBAction)selectLanguage:(id)sender {
-    YLLanguageSelectViewController* controller = [[YLLanguageSelectViewController alloc] initWithNibName:nil bundle:nil];
+    /*YLLanguageSelectViewController* controller = [[YLLanguageSelectViewController alloc] initWithNibName:nil bundle:nil];
     controller.delegate = self;
     UINavigationController* navi = [[UINavigationController alloc] initWithRootViewController:controller];
-    [self presentViewController:navi animated:YES completion:nil];
+    [self presentViewController:navi animated:YES completion:nil];*/
+    [YLLanguageSelectViewController showLanguageSelectViewControllerWithDelegate:self];
 }
 
 - (void)finishedSelectLanguage:(YLLanguageSelectViewController *)controller {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    //[self dismissViewControllerAnimated:YES completion:nil];
     self.textLabel.text = YLLocalizedString(TEXT_CONTENT, nil);
 }
 
 - (void)cancelSelectLangugae:(YLLanguageSelectViewController *)controller {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    //[self dismissViewControllerAnimated:YES completion:nil];
     self.textLabel.text = YLLocalizedString(TEXT_CONTENT, nil);
 }
 

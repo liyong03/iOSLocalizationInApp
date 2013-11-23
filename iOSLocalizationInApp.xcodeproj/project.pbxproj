@@ -131,8 +131,6 @@
 				4E844AD017F57DF600C5709C /* YLAppDelegate.h */,
 				4E844AD117F57DF600C5709C /* YLAppDelegate.m */,
 				4E844AD317F57DF600C5709C /* Main.storyboard */,
-				4E131A6E183DAB7200779391 /* YLLanguageSelectViewController.h */,
-				4E131A6F183DAB7200779391 /* YLLanguageSelectViewController.m */,
 				4E844AD617F57DF600C5709C /* YLViewController.h */,
 				4E844AD717F57DF600C5709C /* YLViewController.m */,
 				4E844AD917F57DF600C5709C /* Images.xcassets */,
@@ -140,6 +138,8 @@
 				4E844AF617F57EE000C5709C /* YLTextDefine.h */,
 				4E131A69183CADEF00779391 /* YLLanguageManager.h */,
 				4E131A6A183CADEF00779391 /* YLLanguageManager.m */,
+				4E131A6E183DAB7200779391 /* YLLanguageSelectViewController.h */,
+				4E131A6F183DAB7200779391 /* YLLanguageSelectViewController.m */,
 			);
 			path = iOSLocalizationInApp;
 			sourceTree = "<group>";
