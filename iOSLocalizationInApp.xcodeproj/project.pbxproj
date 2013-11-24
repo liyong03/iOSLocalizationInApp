@@ -69,6 +69,8 @@
 		4E844B0A17F583C500C5709C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		4E844B1117F584ED00C5709C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = InfoPlist.strings; sourceTree = "<group>"; };
 		4E844B1317F584ED00C5709C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = Localizable.strings; sourceTree = "<group>"; };
+		DFABAFB71840639A00BC539F /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DFABAFB81840639A00BC539F /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 				Base,
 				"zh-Hans",
 				ja,
+				it,
 			);
 			mainGroup = 4E844AB517F57DF600C5709C;
 			productRefGroup = 4E844ABF17F57DF600C5709C /* Products */;
@@ -363,6 +366,7 @@
 			children = (
 				4E844B1117F584ED00C5709C /* zh-Hans */,
 				4E131A6C183DAA2200779391 /* ja */,
+				DFABAFB71840639A00BC539F /* it */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -372,6 +376,7 @@
 			children = (
 				4E844B1317F584ED00C5709C /* zh-Hans */,
 				4E131A6D183DAA2200779391 /* ja */,
+				DFABAFB81840639A00BC539F /* it */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
