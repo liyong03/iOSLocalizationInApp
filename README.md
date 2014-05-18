@@ -1,4 +1,4 @@
-iosLocalizationInApp
+iOSLocalizationInApp
 ====================
 
-iOSLocalizationInApp is a demo showing how to change language on the fly without restarting the App.
+iOSLocalizationInApp is a useful toolkit for changing language on the fly without restarting the App.
